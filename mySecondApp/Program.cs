@@ -4,6 +4,10 @@ namespace mySecondApp
 {
     class Program
     {
+        //constants/fields they are immutable(unchangable)
+        const double PI = 3.14159265359;
+        const int weeks = 54, months = 12;
+        const string birthday = "April 7th 2077";
         static void Main(string[] args)
         {
             int num1 = 10;
@@ -42,7 +46,19 @@ namespace mySecondApp
             bool sunIsOut = false;
 
 
-            Console.WriteLine(myNewFloat);
+            // str to int
+            string newS = "15";
+            string secondStr = "13";
+            //string result = newS + secondStr;
+            int numS = Int32.Parse(newS);
+            int nemX = Int32.Parse(secondStr);
+            int result = numS + nemX;
+
+            //Console.WriteLine(result);
+
+           
+            
+
         }
     }
 }
