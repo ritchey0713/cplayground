@@ -6,8 +6,7 @@ namespace mySecondApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("fuck you");
-            Console.Read();
+
         }
     }
 }
