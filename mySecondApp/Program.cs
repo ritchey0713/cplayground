@@ -8,6 +8,12 @@ namespace mySecondApp
         const double PI = 3.14159265359;
         const int weeks = 54, months = 12;
         const string birthday = "April 7th 2077";
+
+				//file global variables, must use static before declaring
+				static string userName = "";
+				static string password = "";
+				static string userNameValidated = "";
+				static string passwordValidated = "";
         static void Main(string[] args)
         {
             // interpolation
@@ -142,35 +148,35 @@ namespace mySecondApp
             isLowerAndSunny = isLower && isEqual;
             System.Console.WriteLine(isLowerAndSunny);
 
-            isLowerAndSunny = true || isEqual;
-            System.Console.WriteLine(isLowerAndSunny);
+            // isLowerAndSunny = true || isEqual;
+            // System.Console.WriteLine(isLowerAndSunny);
 
-            System.Console.WriteLine("Whats the temp?");
-            string temp = Console.ReadLine();
+            // System.Console.WriteLine("Whats the temp?");
+            // string temp = Console.ReadLine();
             
-            int tempNum;
-            int number;
+            // int tempNum;
+            // int number;
 
-            bool userTempConversion = int.TryParse(temp, out number);
+            // bool userTempConversion = int.TryParse(temp, out number);
 
-            if(userTempConversion){
-                tempNum = number;
-            } else {
-                System.Console.WriteLine("Must be a number! 0 set as the temp!");
-                tempNum = 0;
-            }
+            // if(userTempConversion){
+            //     tempNum = number;
+            // } else {
+            //     System.Console.WriteLine("Must be a number! 0 set as the temp!");
+            //     tempNum = 0;
+            // }
 
-            if(tempNum < 50){
-                System.Console.WriteLine("Put on a coat!");
-            } else if(tempNum == 10) {
-                System.Console.WriteLine("Its 10 degrees out!");
-            }else {
-                System.Console.WriteLine("its nice out!");
-            }
+            // if(tempNum < 50){
+            //     System.Console.WriteLine("Put on a coat!");
+            // } else if(tempNum == 10) {
+            //     System.Console.WriteLine("Its 10 degrees out!");
+            // }else {
+            //     System.Console.WriteLine("its nice out!");
+            // }
 
 
             //try parse 
-            bool isTemp = int.TryParse(temp, out tempNum);
+            //bool isTemp = int.TryParse(temp, out tempNum);
             
             // try {
             //     int userInput = int.Parse(input);
@@ -187,8 +193,58 @@ namespace mySecondApp
             // }
 
 
+            // bool isAdmin = true;
+            // bool isRegistered = true;
+            // string userName = "";
+						// System.Console.WriteLine("Whats your userName?");
+						// userName = Console.ReadLine();
+						
+
+						// if(isRegistered && userName != "" && userName.Equals("admin")) {
+						// 	System.Console.WriteLine("Hi registered user!");
+						// 	System.Console.WriteLine("Hi there! {0}", userName);
+						// 	System.Console.WriteLine("Hello admin!");
+						
+						// }
+
+						// if(isAdmin || isRegistered){
+						// 	System.Console.WriteLine("You are logged in!");
+						// }
+			
+
+					Register();
+					Login();
+
             
         }
+
+				public static void Register() {
+						System.Console.WriteLine("Please enter a username");
+						userName = Console.ReadLine();
+						System.Console.WriteLine("Please enter a password");
+						password = Console.ReadLine();
+						
+						if(userName != "" && password != "") {
+							System.Console.WriteLine("user created");
+						} else {
+							System.Console.WriteLine("Please try again!");
+						}
+
+					
+				}
+
+				public static void Login() {
+						System.Console.WriteLine("Please log in:");
+						userNameValidated = Console.ReadLine();
+						System.Console.WriteLine("Please enter your password:");
+						passwordValidated = Console.ReadLine();
+						
+						if(userName.Equals(userNameValidated) && password.Equals(passwordValidated)){
+							System.Console.WriteLine("Thank you for logging in {0}", userName);
+						} else {
+							System.Console.WriteLine("Your username and password don't match");
+						}
+				}
         // must add static if calling from static method, i.e. Main()
         public static void WriteSomething() {
             System.Console.WriteLine("Hi im called from a method!");
