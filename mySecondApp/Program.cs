@@ -145,8 +145,30 @@ namespace mySecondApp
             isLowerAndSunny = true || isEqual;
             System.Console.WriteLine(isLowerAndSunny);
 
-        
+            System.Console.WriteLine("Whats the temp?");
+            string temp = Console.ReadLine();
             
+            int tempNum;
+            int number;
+
+            if(int.TryParse(temp, out number)){
+                tempNum = number;
+            } else {
+                System.Console.WriteLine("Must be a number! 0 set as the temp!");
+                tempNum = 0;
+            }
+
+            if(tempNum < 50){
+                System.Console.WriteLine("Put on a coat!");
+            } else if(tempNum == 10) {
+                System.Console.WriteLine("Its 10 degrees out!");
+            }else {
+                System.Console.WriteLine("its nice out!");
+            }
+
+
+            //try parse 
+            bool isTemp = int.TryParse(temp, out tempNum);
             
             // try {
             //     int userInput = int.Parse(input);
@@ -161,6 +183,8 @@ namespace mySecondApp
             // } finally {
             //     System.Console.WriteLine("Its done!");
             // }
+
+
             
         }
         // must add static if calling from static method, i.e. Main()
