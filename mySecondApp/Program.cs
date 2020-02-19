@@ -105,6 +105,16 @@ namespace mySecondApp
 
             new12 = -new11;
             System.Console.WriteLine(!isTrue);
+
+            //increment 
+            int num13 = 0;
+            num13++;
+            System.Console.WriteLine(num13);
+            // pre increment
+            System.Console.WriteLine(++num13);
+            //post increment
+            System.Console.WriteLine(++num13);
+            
             
             // try {
             //     int userInput = int.Parse(input);
