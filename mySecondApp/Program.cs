@@ -59,9 +59,25 @@ namespace mySecondApp
             //Console.WriteLine(result);
 
             WriteSomething();
-           WriteSomethingNew("hello");
+            WriteSomethingNew("hello");
             System.Console.WriteLine(Add(5,5));
+            int bigAdd = Add(1,Add(2,3));
+            System.Console.WriteLine(bigAdd);
+            System.Console.WriteLine(Multiply(2, 10));
+            System.Console.WriteLine(Divide(22, 7));
 
+            string brax = "Brax";
+            string chris = "Chris";
+            string adam = "Adam";
+            GreetFriends(brax);
+            GreetFriends(chris);
+            GreetFriends(adam);
+
+            string input = Console.ReadLine();
+            string input2 = Console.ReadLine();
+            UserAdd(input, input2);
+            //System.Console.WriteLine(input);
+            
         }
         // must add static if calling from static method, i.e. Main()
         public static void WriteSomething() {
@@ -74,6 +90,25 @@ namespace mySecondApp
 
         public static int Add(int num1, int num2){
             return num1 + num2;
+        }
+
+        public static int Multiply(int num1, int num2) {
+            return num1 * num2;
+        }
+
+        // when dividing use same types, and use float or double
+        public static float Divide(float num1, float num2) {
+            return num1 / num2;
+        }
+
+        public static void GreetFriends(string name) {
+            System.Console.WriteLine("Hello {0}! It's nice to see you!", name);
+        }
+
+        public static void UserAdd(string num1, string num2) {
+            double newNum = Convert.ToDouble(num1);
+            double newNum2 = Convert.ToDouble(num2);
+            System.Console.WriteLine(newNum + newNum2);
         }
     }
 }
