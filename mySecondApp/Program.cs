@@ -10,6 +10,8 @@ namespace mySecondApp
         const string birthday = "April 7th 2077";
         static void Main(string[] args)
         {
+            // interpolation
+            //System.Console.WriteLine("my birthday is {1}", birthday);
             int num1 = 10;
             int num2 = 20;
             int num3, num4, num5;
@@ -56,9 +58,22 @@ namespace mySecondApp
 
             //Console.WriteLine(result);
 
-           
-            
+            WriteSomething();
+           WriteSomethingNew("hello");
+            System.Console.WriteLine(Add(5,5));
 
+        }
+        // must add static if calling from static method, i.e. Main()
+        public static void WriteSomething() {
+            System.Console.WriteLine("Hi im called from a method!");
+        }
+
+        public static void WriteSomethingNew(string myText) {
+            System.Console.WriteLine(myText);
+        }
+
+        public static int Add(int num1, int num2){
+            return num1 + num2;
         }
     }
 }
