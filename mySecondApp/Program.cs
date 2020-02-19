@@ -21,9 +21,11 @@ namespace mySecondApp
 
             string myName = "DJ";
             string message = "My name is ";
+            string shout = "hello world".ToUpper();
+            string whisper = "HELLO WORLD".ToLower();
 
 
-            Console.WriteLine(message + myName);
+            Console.WriteLine(whisper);
         }
     }
 }
