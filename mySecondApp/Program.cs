@@ -114,6 +114,16 @@ namespace mySecondApp
             System.Console.WriteLine(++num13);
             //post increment
             System.Console.WriteLine(++num13);
+
+            //decrement 
+            int num14 = 0;
+            System.Console.WriteLine(num14);
+            // pre dec
+            System.Console.WriteLine(--num14);
+            //post 
+            System.Console.WriteLine(num14--);
+
+        
             
             
             // try {
