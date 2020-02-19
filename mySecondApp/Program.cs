@@ -123,6 +123,28 @@ namespace mySecondApp
             //post 
             System.Console.WriteLine(num14--);
 
+            // relational and type ops
+            bool isLower;
+            isLower = num13 < num14;
+            System.Console.WriteLine(isLower);
+
+            bool isEqual;
+
+            isEqual = num1 == num2;
+            System.Console.WriteLine(isEqual);
+
+            isEqual = num1 != num2;
+            System.Console.WriteLine(isEqual);
+
+            //conditionals
+            bool isLowerAndSunny;
+
+            isLowerAndSunny = isLower && isEqual;
+            System.Console.WriteLine(isLowerAndSunny);
+
+            isLowerAndSunny = true || isEqual;
+            System.Console.WriteLine(isLowerAndSunny);
+
         
             
             
