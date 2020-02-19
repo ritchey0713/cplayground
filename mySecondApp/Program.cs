@@ -24,8 +24,25 @@ namespace mySecondApp
             string shout = "hello world".ToUpper();
             string whisper = "HELLO WORLD".ToLower();
 
+            // casting 
+            double myDoub = 10.95;
+            int myInt;
+            // removes everything after .
+            myInt = (int)myDoub;
+            // implicet
+            int newNum = 100000;
+            long bigNum = newNum;
 
-            Console.WriteLine(whisper);
+            float newF = 12.22222f;
+            double newD = newF;
+
+            // type conversion 
+            string myString = myDoub.ToString();
+            string myNewFloat = newF.ToString(); 
+            bool sunIsOut = false;
+
+
+            Console.WriteLine(myNewFloat);
         }
     }
 }
