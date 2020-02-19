@@ -80,18 +80,45 @@ namespace mySecondApp
             // System.Console.WriteLine("Your total is:");
             // UserAdd(input, input2);
             //System.Console.WriteLine(input);
-            System.Console.WriteLine("Please enter a number");
-            string input = Console.ReadLine();
-           
-           
-            try {
-                int userInput = int.Parse(input);
-                
+            // System.Console.WriteLine("Please enter a number");
+            // string input = Console.ReadLine();
+            // string input2 = Console.ReadLine();
+            // int inputNum = Int32.Parse(input);
+            // int inputNum2 = Int32.Parse(input2);
+            // Divide(inputNum, inputNum2);
+
+            num3 = 5;
+            num4 = 0;
+            try{
+                int result0 = num3 / num4;
+                System.Console.WriteLine(result0);
             }
-            catch (System.Exception) {
-                System.Console.WriteLine("Format exception, please check to make sure you entered a number");
+            catch (DivideByZeroException) {
                 
+                System.Console.WriteLine("Cannot divide by 0!");
             }
+
+            int new10 = 5;
+            int new11 = -10;
+            int new12;
+            bool isTrue = false;
+
+            new12 = -new11;
+            System.Console.WriteLine(!isTrue);
+            
+            // try {
+            //     int userInput = int.Parse(input);
+                
+            // }
+            // catch (FormatException) {
+            //     System.Console.WriteLine("Format exception, please check to make sure you entered a number");
+                
+            // }
+            // catch(Exception) {
+            //     System.Console.WriteLine("Something went wrong!");
+            // } finally {
+            //     System.Console.WriteLine("Its done!");
+            // }
             
         }
         // must add static if calling from static method, i.e. Main()
