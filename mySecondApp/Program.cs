@@ -151,7 +151,9 @@ namespace mySecondApp
             int tempNum;
             int number;
 
-            if(int.TryParse(temp, out number)){
+            bool userTempConversion = int.TryParse(temp, out number);
+
+            if(userTempConversion){
                 tempNum = number;
             } else {
                 System.Console.WriteLine("Must be a number! 0 set as the temp!");
