@@ -73,10 +73,25 @@ namespace mySecondApp
             GreetFriends(chris);
             GreetFriends(adam);
 
-            string input = Console.ReadLine();
-            string input2 = Console.ReadLine();
-            UserAdd(input, input2);
+            // System.Console.WriteLine("Please input a number");
+            // string input = Console.ReadLine();
+            // System.Console.WriteLine("Please input a number");
+            // string input2 = Console.ReadLine();
+            // System.Console.WriteLine("Your total is:");
+            // UserAdd(input, input2);
             //System.Console.WriteLine(input);
+            System.Console.WriteLine("Please enter a number");
+            string input = Console.ReadLine();
+           
+           
+            try {
+                int userInput = int.Parse(input);
+                
+            }
+            catch (System.Exception) {
+                System.Console.WriteLine("Format exception, please check to make sure you entered a number");
+                
+            }
             
         }
         // must add static if calling from static method, i.e. Main()
