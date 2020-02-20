@@ -9,3 +9,14 @@
 /home/maveryk/Desktop/code/c#2/mySecondApp/obj/Debug/netcoreapp3.1/mySecondApp.AssemblyInfo.cs
 /home/maveryk/Desktop/code/c#2/mySecondApp/obj/Debug/netcoreapp3.1/mySecondApp.dll
 /home/maveryk/Desktop/code/c#2/mySecondApp/obj/Debug/netcoreapp3.1/mySecondApp.pdb
+/home/maveryk/Desktop/code/cplayground/mySecondApp/bin/Debug/netcoreapp3.1/mySecondApp
+/home/maveryk/Desktop/code/cplayground/mySecondApp/bin/Debug/netcoreapp3.1/mySecondApp.deps.json
+/home/maveryk/Desktop/code/cplayground/mySecondApp/bin/Debug/netcoreapp3.1/mySecondApp.runtimeconfig.json
+/home/maveryk/Desktop/code/cplayground/mySecondApp/bin/Debug/netcoreapp3.1/mySecondApp.runtimeconfig.dev.json
+/home/maveryk/Desktop/code/cplayground/mySecondApp/bin/Debug/netcoreapp3.1/mySecondApp.dll
+/home/maveryk/Desktop/code/cplayground/mySecondApp/bin/Debug/netcoreapp3.1/mySecondApp.pdb
+/home/maveryk/Desktop/code/cplayground/mySecondApp/obj/Debug/netcoreapp3.1/mySecondApp.csprojAssemblyReference.cache
+/home/maveryk/Desktop/code/cplayground/mySecondApp/obj/Debug/netcoreapp3.1/mySecondApp.AssemblyInfoInputs.cache
+/home/maveryk/Desktop/code/cplayground/mySecondApp/obj/Debug/netcoreapp3.1/mySecondApp.AssemblyInfo.cs
+/home/maveryk/Desktop/code/cplayground/mySecondApp/obj/Debug/netcoreapp3.1/mySecondApp.dll
+/home/maveryk/Desktop/code/cplayground/mySecondApp/obj/Debug/netcoreapp3.1/mySecondApp.pdb

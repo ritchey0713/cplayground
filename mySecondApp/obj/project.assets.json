@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/maveryk/Desktop/code/c#2/mySecondApp/mySecondApp.csproj",
+      "projectUniqueName": "/home/maveryk/Desktop/code/cplayground/mySecondApp/mySecondApp.csproj",
       "projectName": "mySecondApp",
-      "projectPath": "/home/maveryk/Desktop/code/c#2/mySecondApp/mySecondApp.csproj",
+      "projectPath": "/home/maveryk/Desktop/code/cplayground/mySecondApp/mySecondApp.csproj",
       "packagesPath": "/home/maveryk/.nuget/packages/",
-      "outputPath": "/home/maveryk/Desktop/code/c#2/mySecondApp/obj/",
+      "outputPath": "/home/maveryk/Desktop/code/cplayground/mySecondApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/maveryk/.nuget/NuGet/NuGet.Config"
