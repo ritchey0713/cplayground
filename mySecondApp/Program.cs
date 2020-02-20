@@ -286,18 +286,33 @@ namespace mySecondApp
 						System.Console.WriteLine("Hello");
 					}
 
-					int i = 0;
-					int lengthOfText = 0;
-					string summary = "";
-					do {
-						System.Console.WriteLine("name please");
-						string name = Console.ReadLine();
-						int currentLength = name.Length;
-						lengthOfText += currentLength;
-						summary += name;
-					} while( lengthOfText < 20);
+					// int i = 0;
+					// int lengthOfText = 0;
+					// string summary = "";
+					// do {
+					// 	System.Console.WriteLine("name please");
+					// 	string name = Console.ReadLine();
+					// 	int currentLength = name.Length;
+					// 	lengthOfText += currentLength;
+					// 	summary += name;
+					// } while( lengthOfText < 20);
 
-					System.Console.WriteLine("Thanks! {0}", summary);
+					// System.Console.WriteLine("Thanks! {0}", summary);
+
+                    // int c = 0;
+
+                    // while(c < 5){
+                    //     System.Console.WriteLine(c);
+                    // }
+
+                    for(int x = 0; x < 10; x++){
+                        if(x == 3) {
+                            System.Console.WriteLine("We stop at 3");
+                            break; // exits the iteration
+                            //continue; // skips this iteration
+                        }
+                        System.Console.WriteLine(x);
+                    }
 
 
         }
