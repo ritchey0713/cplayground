@@ -212,9 +212,34 @@ namespace mySecondApp
 						// }
 			
 
-					Register();
-					Login();
+					// Register();
+					// Login();
 
+					int age = 29;
+
+					switch(age) {
+						case 15: 
+							System.Console.WriteLine("too young to vote!");
+							break;
+						
+						case 25: 
+						System.Console.WriteLine("Can rent a car!");
+						break;
+
+						default:
+						System.Console.WriteLine("too old!");
+						break;
+					}
+
+					if(age == 15){
+						System.Console.WriteLine("too young to vote!");
+					} else if( age ==25 ){
+						System.Console.WriteLine("Can rent a car!");
+					} else {
+						System.Console.WriteLine("Too old!");
+					}
+
+					string username = "Jon";
             
         }
 
