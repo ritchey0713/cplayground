@@ -305,15 +305,51 @@ namespace mySecondApp
                     //     System.Console.WriteLine(c);
                     // }
 
-                    for(int x = 0; x < 10; x++){
-                        if(x == 3) {
-                            System.Console.WriteLine("We stop at 3");
-                            break; // exits the iteration
-                            //continue; // skips this iteration
-                        }
-                        System.Console.WriteLine(x);
-                    }
+                    // for(int x = 0; x < 10; x++){
+                    //     if(x == 3) {
+                    //         System.Console.WriteLine("We stop at 3");
+                    //         break; // exits the iteration
+                    //         //continue; // skips this iteration
+                    //     }
+                    //     System.Console.WriteLine(x);
+                    // }
 
+					float grades = 0;
+					float students = 0;
+          float currentGrade = 0;
+          string input = "0";
+					//System.Console.WriteLine("Average grade score is {0}", grades / students);
+
+                    // do {
+                    //     System.Console.WriteLine("enter grade");
+                    //     string getGrade = Console.ReadLine();
+					// 	if (getGrade == "-1") {
+					// 		break;
+					// 	}
+					// 	float grade;
+					// 	bool isGrade = float.TryParse(getGrade, out grade);
+					// 	if(isGrade && grade <= 20 && grade > 0) {
+					// 		grades += grade;
+					// 		++students;
+					// 		continue;
+					// 	 } 
+                    // } while(start != "-1");
+
+                    while(input != "-1"){
+                      System.Console.WriteLine("enter grade");
+                     	input = Console.ReadLine();
+                			bool isGrade = float.TryParse(input, out currentGrade);
+                			if(isGrade && currentGrade <= 20 && currentGrade > 0) {
+                				grades += currentGrade;
+                				students++;
+                			} else if (input.Equals("-1")) {
+                    		float average  = grades / students; 
+                    		System.Console.WriteLine("Average is {0}", average);
+											}
+											else {
+												System.Console.WriteLine("Oops, please try again");
+											}
+                    }
 
         }
 
