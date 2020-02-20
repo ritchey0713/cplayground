@@ -241,6 +241,19 @@ namespace mySecondApp
 
 					string username = "Jon";
             
+						switch(username) {
+							case "Jon":
+							System.Console.WriteLine("Hello jon!");
+							break;
+
+							case "root":
+							System.Console.WriteLine("Hello root!");
+							break;
+
+							default: 
+							System.Console.WriteLine("Hello anon!");
+							break;
+						}
         }
 
 				public static void Register() {
