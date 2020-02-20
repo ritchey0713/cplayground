@@ -281,8 +281,10 @@ namespace mySecondApp
 
 					System.Console.WriteLine(state);
 
-
-
+					// looping!
+					for(int counter = 0; counter < 5; counter++) {
+						System.Console.WriteLine("Hello");
+					}
 
         }
 
