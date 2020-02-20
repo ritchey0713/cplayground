@@ -258,9 +258,28 @@ namespace mySecondApp
 						}
 
 					
-						checkScore(200, "Anon");
+						//checkScore(200, "Anon");
+
+						int value = -10;
+						string state;
+
+						if(value < 0){
+							state = "solid";
+						} else {
+							state = "liquid";
+						}
+
+						System.Console.WriteLine(state);
 
 
+					value = 200;
+
+					state = value > 10 ? "solid" : "Liquid";
+
+					// nested, never do this, trash code. 
+					state = value > 100 ? "gas" : value > 50 ? "liquid" : "solid" ;
+
+					System.Console.WriteLine(state);
 
 
 
