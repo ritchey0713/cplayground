@@ -14,6 +14,8 @@ namespace mySecondApp
 				static string password = "";
 				static string userNameValidated = "";
 				static string passwordValidated = "";
+				static int highScore = 100;
+				static string highScorePlayer = "Tron";
         static void Main(string[] args)
         {
             // interpolation
@@ -254,7 +256,27 @@ namespace mySecondApp
 							System.Console.WriteLine("Hello anon!");
 							break;
 						}
+
+					
+						checkScore(200, "Anon");
+
+
+
+
+
+
         }
+
+				public static void checkScore(int score, string name) {
+					if(score > highScore) {
+						highScore = score;
+						highScorePlayer = name;
+						System.Console.WriteLine("New high score is {0}", score);
+						System.Console.WriteLine("New highscore holder is {0}", name);
+					} else {
+						System.Console.WriteLine("The old highscore of {0} could not be broken and is held by {1}", highScore, highScorePlayer);
+					}
+				}
 
 				public static void Register() {
 						System.Console.WriteLine("Please enter a username");
