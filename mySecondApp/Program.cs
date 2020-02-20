@@ -282,9 +282,23 @@ namespace mySecondApp
 					System.Console.WriteLine(state);
 
 					// looping!
-					for(int counter = 0; counter < 5; counter++) {
+					for(int counter = 0; counter < 5; counter+=1) {
 						System.Console.WriteLine("Hello");
 					}
+
+					int i = 0;
+					int lengthOfText = 0;
+					string summary = "";
+					do {
+						System.Console.WriteLine("name please");
+						string name = Console.ReadLine();
+						int currentLength = name.Length;
+						lengthOfText += currentLength;
+						summary += name;
+					} while( lengthOfText < 20);
+
+					System.Console.WriteLine("Thanks! {0}", summary);
+
 
         }
 
